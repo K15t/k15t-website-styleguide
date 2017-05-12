@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
-<body id="kss-node" class="kss-fullscreen-mode">
+<body id="kss-node" >
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
@@ -71,6 +71,20 @@
         <a class="kss-nav__menu-link" href="section-close.html">
           <span class="kss-nav__ref">9</span><span class="kss-nav__name">Close</span>
         </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-close.html#kssref-close-mixin">
+                  <span class="kss-nav__ref ">9.1</span
+                  ><span class="kss-nav__name">c-close(@type)</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-close.html#kssref-close-ui">
+                  <span class="kss-nav__ref ">9.2</span
+                  ><span class="kss-nav__name">Close</span>
+                </a>
+              </li>
+            </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-expander.html">
@@ -157,33 +171,84 @@
 </div>
 <article role="main" class="kss-main">
 
-    <div id="kssref-image-mixins" class="kss-section kss-section--depth-2 is-fullscreen">
+    <div id="kssref-close" class="kss-section kss-section--depth-1 ">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-close">
+            <span class="kss-title__ref">
+              9
+              <span class="kss-title__permalink-hash">
+                  #Close
+              </span>
+            </span>
+            Close
+          </a>
+        </h1>
+
+
+
+      </div>
+
+
+
+    </div>
+    <section id="kssref-close-mixin" class="kss-section kss-section--depth-2 ">
 
       <div class="kss-style">
         <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-image-mixins">
+          <a class="kss-title__permalink" href="#kssref-close-mixin">
             <span class="kss-title__ref">
-              12.1
+              9.1
               <span class="kss-title__permalink-hash">
-                  #Image - Mixins
+                  #Close - Mixin
               </span>
             </span>
-            c-image(@type)
+            c-close(@type)
           </a>
         </h2>
 
 
           <div class="kss-description">
-            <p>Image</p>
+            <p>Creates a Close</p>
+<p>@type     -</p>
 
+          </div>
+
+      </div>
+
+
+        <div class="kss-source kss-style">
+          Source: <code>components/close.less</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-close-ui" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-close-ui">
+            <span class="kss-title__ref">
+              9.2
+              <span class="kss-title__permalink-hash">
+                  #Close - UI
+              </span>
+            </span>
+            Close
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <div class="close"></div>
           </div>
 
           <div class="kss-parameters__title">Parameters:</div>
           <ul class="kss-parameters">
             <li class="kss-parameters__item">
-              <div class="kss-parameters__name"><code>@type</code></div>
+              <div class="kss-parameters__name"><code>.close</code></div>
               <div class="kss-parameters__description">
-                border|circle|icon
+                Close
               </div>
             </li>
           </ul>
@@ -191,10 +256,10 @@
 
 
         <div class="kss-source kss-style">
-          Source: <code>components/image.less</code>, line 1
+          Source: <code>components.less</code>, line 950
         </div>
 
-    </div>
+    </section>
 </article>
 
 <!-- SCRIPTS -->
